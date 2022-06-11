@@ -47,7 +47,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-  delete objeto[propiedad]; 
+  delete objeto[unaPropiedad]; 
   return objeto;
 }
 
@@ -114,6 +114,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:
   usuario.amigos.push(nuevoAmigo); 
+  return usuario;
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -136,7 +137,7 @@ function sumarLikesDeUsuario(usuario) {
   // Tu código:
   var suma = 0;
   for (var i=0; i< usuario.posts.length; i++) {
-    suma = suma + usuario[i].posts[likes];
+    suma = suma + usuario.posts[i].likes;
   } return suma;
 }
 
